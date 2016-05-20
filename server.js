@@ -1,6 +1,7 @@
 var http = require("http"),
     url = require("url"),
     fs = require("fs"),
+    qs = require("querystring"),
     user = require("./userOption");
 
 http.createServer(function(request, response) {
@@ -8,10 +9,17 @@ http.createServer(function(request, response) {
 
     user.getBaseInfo();
 
-    if(pathName == "/") {
-        file = "index.html";
-    }else {
-        file = "." + pathName;
+    switch(pathName) {
+        case "/":
+            file = "index.html";
+            break;
+        case "/base":
+            var arg = qs.parse(url.parse(request.url).query);
+            console.log(arg);
+            break;
+        default:
+            file = "." + pathName;
+            break;
     }
 
     fs.readFile(file, function(err, data) {
