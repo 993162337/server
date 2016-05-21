@@ -12,7 +12,6 @@ exports.fetchUserInfo = function () {
     }
 
     request.post({url: url, form: data}, function(err, res, body) {
-        var result = JSON.parse(body).openid;
-        console.log("OpenID: " + result);
+        console.log("Response content: " + body);
     })
 }

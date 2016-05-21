@@ -3,11 +3,7 @@ var server = require("./server/server"),
     route = require("./server/route");
 
 // create a web server
-server.createServer(serverCall);
+var app = server.createServer();
 
-// used to handle app after server created
-function serverCall(app) {
-    route.handleRoute(app);
-    user.fetchUserInfo();
-    console.log("hello world");
-}
+route.handleRoute(app);
+user.fetchUserInfo();
