@@ -6,4 +6,3 @@ var server = require("./server/server"),
 var app = server.createServer();
 
 route.handleRoute(app);
-user.fetchUserInfo();
