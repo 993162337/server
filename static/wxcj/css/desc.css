@@ -1,0 +1,47 @@
+.contain {
+	background: none;
+}
+ul {
+	font-size: .7rem; 
+	color: #595757;
+	position: absolute;
+	width: 85.47%;
+	top: 30%;
+	left: 50%;
+	transform:translateX(-50%);
+}
+label {
+	color: #eb6100;
+}
+li:nth-of-type(3),
+li:nth-of-type(4) {
+	color: #eb6100;
+	margin-bottom: 1.4rem;
+}
+li:last-of-type {
+	font-size: 0;
+	margin-bottom: 1rem;
+}
+li:last-of-type img {
+	width: 30%;
+	margin-right: 5%;
+}
+li:last-of-type img:last-of-type {
+	margin-right: 0;
+}
+.fadeIn:nth-of-type(2) {
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+}
+.fadeIn:nth-of-type(3) {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+.fadeIn:nth-of-type(4) {
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+}
+.fadeIn:nth-of-type(5) {
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+}

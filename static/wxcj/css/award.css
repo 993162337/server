@@ -1,0 +1,50 @@
+.contain {
+	background: none;
+}
+.formBox {
+	font-size: .7rem; 
+	color: #595757;
+	position: absolute;
+	width: 85.47%;
+	top: 30%;
+	left: 50%;
+	transform:translateX(-50%);
+}
+h1 {
+	font-size: 1rem;
+	color: #c30d23;
+	margin-bottom: .5rem;
+	text-align: center;
+	font-weight: bold;
+}
+p {
+	margin-bottom: .6rem;
+}
+label {
+	font-weight: bold;
+	margin-right: .5rem;
+}
+input {
+	width: 58.9%;
+	padding: .2rem;
+	border: 1px solid #595656;
+}
+form p:last-of-type {
+	padding-top: .5rem;
+}
+form p:last-of-type input {
+	width: 100%;
+	font-size: .9rem;
+	color: #fff;
+	font-weight: bold;
+	background: #eb6100;
+	border: none;
+}
+p.fadeIn {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+form.fadeIn {
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+}
